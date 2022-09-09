@@ -13,11 +13,16 @@
             <div class="before-fortune">
                 <label for="fortune-input">
                     <input type="text" name="question" id="question" />
-                    <button id="ask-btn">Ask the Magic 8-Ball</button>
+                    <button id="ask">Ask the Magic 8-Ball</button>
                 </label>
                 <div class="8-ball-section">
                     <img src="./assets/8-ball.png" alt="8-Ball" id="8-ball" />
                 </div>
+            </div>
+            <div id="after-fortune" class="hide">
+                <h3>Magic 8-Ball Says...</h3>
+                <p id="fortune"></p>
+                <button id="reset">Try Again</button>
             </div>
         </main>
         <script type="module" src="app.js"></script>
