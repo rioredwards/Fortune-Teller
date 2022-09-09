@@ -4,7 +4,6 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 h2 {
@@ -14,10 +13,41 @@ h2 {
 
 p {
     color: white;
+    font-size: 28px;
+    text-shadow: rgba(191, 0, 255, 0.9) 0px 0px 11px;
 }
 
 button {
     font-size: 18px;
+    box-shadow: inset 0px 0px 15px 3px #47638f;
+    background: linear-gradient(to bottom, #a647ff 5%, #030ba1 100%);
+    background-color: #a647ff;
+    border-radius: 17px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 6px 13px;
+    text-shadow: 0px 1px 0px #0800ed;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #030ba1 5%, #a647ff 100%);
+    background-color: #030ba1;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+#question:focus {
+    outline: none;
+    border: 3px inset #b689ff;
+}
+
+.no-input {
+    border: 3px inset #ff0000;
 }
 
 body {
@@ -69,6 +99,8 @@ main {
 #question {
     height: 2rem;
     width: 80%;
+    border-radius: 8px;
+    padding-left: 4px;
 }
 
 #fortune {
