@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+    padding: 0;
+    margin: 0;
+}
