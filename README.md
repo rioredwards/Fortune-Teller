@@ -1,27 +1,40 @@
-## The Golden Rule:
+## Plan:
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+Fortune Teller App
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+## Functionality:
 
-## Making a plan
+1. **User inputs question into textbox**
+1. **User clicks button to get fortune**
+1. **Fortune is displayed**
+1. **Try again button is displayed**
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+## HTML Elements:
 
-Additional considerations:
+-   `<input>` Text input for question
+-   `<button>` Button to trigger fortune
+-   `<img>` Image for 8ball
+-   `<h2>` Header "Magic 8-Ball Says..."
+-   `<p>` Paragraph for fortune
+-   `<button>` Button to reset
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+## State variables (JavaScript)
+
+-   Fortune
+
+## Events (JavaScript)
+
+-   Button click to generate fortune
+
+    -   pick random fortune
+    -   remove 8 ball img, text box, submit button
+    -   display fortune
+    -   display “play again” button
+
+-   Button click to play again
+    -   remove fortune, "play again" button
+    -   display original state
+
+## Wireframe
+
+![](./Fortune_Teller_Wireframe.png)
